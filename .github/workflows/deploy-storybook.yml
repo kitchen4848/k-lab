@@ -15,20 +15,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - run: npm ci
+
       - run: npm run build-storybook
 
       - uses: actions/configure-pages@v3
 
-      - name: Upload Storybook artifact
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: ./storybook-static
-          retention-days: 1
 
       - id: deployment
         uses: actions/deploy-pages@v4
