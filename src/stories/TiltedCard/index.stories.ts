@@ -23,7 +23,7 @@ const meta = {
     components: { TiltedCard },
     setup: () => ({ args }),
     template: `
-      <div style="display: flex; align-items: center; justify-content: center; height: 320px; background-color: #111; border-radius: 1rem;">
+      <div style="display: flex; align-items: center; justify-content: center; height: 320px;">
         <TiltedCard v-bind="args">
           <div style="width: 220px; padding: 1.5rem; color: #fff; background: linear-gradient(135deg, #7f27d7, #2a6df4); border-radius: 1rem;">
             <h3 style="margin: 0 0 0.5rem;">Tilted Card</h3>

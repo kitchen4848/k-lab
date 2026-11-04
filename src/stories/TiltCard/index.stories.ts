@@ -21,7 +21,7 @@ const meta = {
     components: { TiltCard },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:520px; display:grid; place-items:center; padding:48px; background:radial-gradient(circle at 50% 30%, #1e1b4b, #020617 70%)">
+      <div style="min-height:520px; display:grid; place-items:center; padding:48px">
         <TiltCard v-bind="args">
           <div style="width:300px; padding:32px; color:#fff; font-family:system-ui,sans-serif">
             <div style="height:150px; border-radius:14px; background:linear-gradient(135deg,#f472b6,#818cf8 55%,#22d3ee); margin-bottom:24px; box-shadow:0 12px 30px -10px #818cf8"></div>
@@ -44,7 +44,7 @@ export const GoldExtreme: Story = {
     components: { TiltCard },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:520px; display:grid; place-items:center; padding:48px; background:#0c0a09">
+      <div style="min-height:520px; display:grid; place-items:center; padding:48px">
         <TiltCard v-bind="args">
           <div style="width:260px; height:340px; padding:28px; display:flex; flex-direction:column; justify-content:flex-end; color:#422006; font-family:Georgia,serif; background:linear-gradient(145deg,#fde68a,#f59e0b 55%,#b45309)">
             <div style="font-size:4rem; line-height:1">&#9733;</div>

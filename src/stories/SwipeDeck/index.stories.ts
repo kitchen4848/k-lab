@@ -47,10 +47,10 @@ const meta = {
     components: { SwipeDeck },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:max(100vh, 620px); display:grid; place-items:center; padding:2rem; background:radial-gradient(ellipse at 50% 0%, #241a3d 0%, #0a0812 75%); font-family: system-ui, sans-serif; color:#fff">
+      <div style="min-height:max(100vh, 620px); display:grid; place-items:center; padding:2rem; font-family: system-ui, sans-serif">
         <SwipeDeck v-bind="args">
           <template #default="{ item }">
-            <div :style="{ height:'100%', display:'flex', flexDirection:'column', justifyContent:'flex-end', padding:'1.5rem', boxSizing:'border-box', background:'linear-gradient(160deg,' + item.from + ',' + item.to + ')' }">
+            <div :style="{ height:'100%', display:'flex', flexDirection:'column', justifyContent:'flex-end', padding:'1.5rem', color:'#fff', boxSizing:'border-box', background:'linear-gradient(160deg,' + item.from + ',' + item.to + ')' }">
               <div style="font-size:5.5rem; line-height:1; margin-bottom:auto; padding-top:2.5rem; text-align:center; filter:drop-shadow(0 8px 16px rgba(0,0,0,.35))">{{ item.emoji }}</div>
               <h2 style="margin:0; font-size:2rem; text-shadow:0 2px 12px rgba(0,0,0,.35)">{{ item.name }}</h2>
               <p style="margin:.25rem 0 0; opacity:.9">{{ item.tag }}</p>

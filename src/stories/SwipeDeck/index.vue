@@ -289,9 +289,9 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(127, 127, 127, 0.4);
   border-radius: 24px;
-  color: rgba(255, 255, 255, 0.7);
+  color: inherit;
   font-family: system-ui, sans-serif;
 }
 
@@ -309,9 +309,9 @@ onBeforeUnmount(() => {
   height: 56px;
   padding: 0 1.1rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.07);
-  color: #fff;
+  border: 1px solid rgba(127, 127, 127, 0.4);
+  background: rgba(127, 127, 127, 0.1);
+  color: inherit;
   font:
     600 1.25rem/1 system-ui,
     sans-serif;
@@ -323,7 +323,7 @@ onBeforeUnmount(() => {
 
 .swipe-deck__btn:hover:not(:disabled) {
   transform: scale(1.08);
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(127, 127, 127, 0.2);
 }
 
 .swipe-deck__btn:focus-visible {
