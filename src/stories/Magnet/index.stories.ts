@@ -23,7 +23,7 @@ const meta = {
     components: { Magnet },
     setup: () => ({ args }),
     template: `
-      <div style="display: flex; align-items: center; justify-content: center; min-height: 480px; background: #0b0b10; border-radius: 12px;">
+      <div style="display: flex; align-items: center; justify-content: center; min-height: 480px;">
         <Magnet v-bind="args">
           <button type="button" style="padding: 0.9rem 1.8rem; font-size: 1rem; font-weight: 600; color: #fff; background: #7f27d7; border: 0; border-radius: 999px; cursor: pointer;">
             Hover near me

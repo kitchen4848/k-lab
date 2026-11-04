@@ -22,8 +22,8 @@ const meta = {
     setup: () => ({ args }),
     // key forces a remount whenever the trigger changes so it can be previewed
     template: `
-      <div style="min-height:300px; display:grid; place-items:center; padding:40px; background:radial-gradient(circle at 50% 40%, #0d2b1f, #040807 70%); color:#4ade80">
-        <ScrambleText :key="args.trigger + args.text" v-bind="args" style="font-size:clamp(1.4rem,4vw,2.6rem); font-weight:700; letter-spacing:.06em; text-shadow:0 0 14px rgb(74 222 128 / .55)" />
+      <div style="min-height:300px; display:grid; place-items:center; padding:40px; color:#15803d">
+        <ScrambleText :key="args.trigger + args.text" v-bind="args" style="font-size:clamp(1.4rem,4vw,2.6rem); font-weight:700; letter-spacing:.06em; text-shadow:0 0 14px rgb(22 163 74 / .35)" />
       </div>`,
   }),
 } satisfies Meta<typeof ScrambleText>

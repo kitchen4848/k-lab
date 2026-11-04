@@ -26,9 +26,9 @@ const meta = {
       tags: ['Vue 3', 'TypeScript', 'Storybook', 'Vite', 'Canvas', 'CSS Houdini', 'Playwright', 'ESLint', 'Oxlint', 'Pinia'],
     }),
     template: `
-      <div style="min-height:300px; display:grid; align-content:center; padding:40px 0; background:#050816; color:#fff; font-family:system-ui,sans-serif">
+      <div style="min-height:300px; display:grid; align-content:center; padding:40px 0; color:#312e81; font-family:system-ui,sans-serif">
         <InfiniteMarquee v-bind="args">
-          <span v-for="t in tags" :key="t" style="padding:10px 22px; border-radius:999px; background:linear-gradient(135deg, rgb(99 102 241 / .35), rgb(236 72 153 / .25)); box-shadow:inset 0 0 0 1px rgb(255 255 255 / .15); white-space:nowrap; font-weight:600">{{ t }}</span>
+          <span v-for="t in tags" :key="t" style="padding:10px 22px; border-radius:999px; background:linear-gradient(135deg, rgb(99 102 241 / .35), rgb(236 72 153 / .25)); box-shadow:inset 0 0 0 1px rgb(99 102 241 / .25); white-space:nowrap; font-weight:600">{{ t }}</span>
         </InfiniteMarquee>
       </div>`,
   }),
@@ -45,7 +45,7 @@ export const ReverseCards: Story = {
     components: { InfiniteMarquee },
     setup: () => ({ args, emojis: ['🚀', '🌈', '🔥', '🎧', '🧪', '🌊', '🍉', '⚡'] }),
     template: `
-      <div style="min-height:300px; display:grid; align-content:center; padding:40px 0; background:#0a0a0a">
+      <div style="min-height:300px; display:grid; align-content:center; padding:40px 0">
         <InfiniteMarquee v-bind="args">
           <div v-for="e in emojis" :key="e" style="width:120px; height:120px; display:grid; place-items:center; font-size:3rem; border-radius:24px; background:linear-gradient(160deg,#27272a,#18181b); box-shadow:inset 0 0 0 1px #3f3f46">{{ e }}</div>
         </InfiniteMarquee>

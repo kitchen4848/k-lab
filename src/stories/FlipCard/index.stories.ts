@@ -24,7 +24,7 @@ const meta = {
     components: { FlipCard },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:max(100vh, 520px); display:grid; place-items:center; padding:2rem; background:radial-gradient(ellipse at 50% 0%, #1d1b3a 0%, #090a16 75%); font-family: system-ui, sans-serif; color:#fff">
+      <div style="min-height:max(100vh, 520px); display:grid; place-items:center; padding:2rem; font-family: system-ui, sans-serif; color:#fff">
         <FlipCard v-bind="args" v-model:flipped="args.flipped">
           <template #front>
             <div style="height:100%; display:flex; flex-direction:column; justify-content:flex-end; padding:1.75rem; background:radial-gradient(circle at 30% 20%, #8b5cf6 0%, transparent 55%), radial-gradient(circle at 80% 80%, #06b6d4 0%, transparent 55%), #14122b; border:1px solid rgba(255,255,255,.15); border-radius:inherit; box-sizing:border-box">

@@ -26,7 +26,7 @@ const meta = {
       return { args, pos }
     },
     template: `
-      <div style="min-height:max(100vh, 480px); display:grid; place-items:center; padding:2rem; box-sizing:border-box; background:radial-gradient(ellipse at 50% 0%, #1d1b3a 0%, #090a16 75%); font-family: system-ui, sans-serif; color:#fff">
+      <div style="min-height:max(100vh, 480px); display:grid; place-items:center; padding:2rem; box-sizing:border-box; font-family: system-ui, sans-serif">
         <div style="width:min(760px,92vw); aspect-ratio:16/10">
           <CompareSlider v-bind="args" v-model:position="pos">
             <template #before>
@@ -78,7 +78,7 @@ export const VerticalDayNight: Story = {
       return { args, pos }
     },
     template: `
-      <div style="min-height:520px; display:grid; place-items:center; padding:2rem; box-sizing:border-box; background:#0a0c14; font-family: system-ui, sans-serif">
+      <div style="min-height:520px; display:grid; place-items:center; padding:2rem; box-sizing:border-box; font-family: system-ui, sans-serif">
         <div style="width:min(420px,90vw); height:420px">
           <CompareSlider v-bind="args" v-model:position="pos">
             <template #before>
