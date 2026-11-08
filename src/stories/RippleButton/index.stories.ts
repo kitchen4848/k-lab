@@ -20,7 +20,7 @@ const meta = {
     components: { RippleButton },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:max(100vh, 320px); display:grid; place-items:center; padding:2rem; background:radial-gradient(ellipse at 50% 30%, #1b1740 0%, #08070f 75%)">
+      <div style="min-height:max(100vh, 320px); display:grid; place-items:center; padding:2rem">
         <RippleButton v-bind="args">Press anywhere</RippleButton>
       </div>`,
   }),
@@ -41,7 +41,7 @@ export const EmberLarge: Story = {
     components: { RippleButton },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:320px; display:grid; place-items:center; padding:2rem; background:radial-gradient(ellipse at 50% 30%, #3a1608 0%, #0b0604 75%)">
+      <div style="min-height:320px; display:grid; place-items:center; padding:2rem">
         <RippleButton v-bind="args" style="font-size:1.6rem; padding:1.2em 4em; border-radius:20px" aria-label="Ignite">Ignite</RippleButton>
       </div>`,
   }),

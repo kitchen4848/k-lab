@@ -28,7 +28,7 @@ const meta = {
       return { args, local }
     },
     template: `
-      <div style="min-height:320px; display:flex; flex-direction:column; gap:28px; align-items:center; justify-content:center; padding:40px; background:linear-gradient(160deg,#111827,#030712); color:#f9fafb; font-family:system-ui,sans-serif">
+      <div style="min-height:320px; display:flex; flex-direction:column; gap:28px; align-items:center; justify-content:center; padding:40px; color:#111827; font-family:system-ui,sans-serif">
         <RollingNumber v-bind="args" :value="local ?? args.value" style="font-size:clamp(3rem,10vw,6rem); font-weight:800; letter-spacing:-0.02em" />
         <button type="button" @click="local = Math.round(Math.random() * 99999)"
           style="padding:10px 20px; border-radius:999px; border:1px solid #374151; background:#1f2937; color:#fff; cursor:pointer; font-size:1rem">

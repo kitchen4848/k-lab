@@ -36,7 +36,7 @@ const meta = {
     components: { MagnifyDock },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:420px; display:flex; align-items:flex-end; justify-content:center; padding:40px; background:radial-gradient(circle at 30% 20%, #7c3aed, transparent 50%), radial-gradient(circle at 80% 70%, #0ea5e9, transparent 50%), #0b1020">
+      <div style="min-height:420px; display:flex; align-items:flex-end; justify-content:center; padding:40px">
         <MagnifyDock v-bind="args" />
       </div>`,
   }),

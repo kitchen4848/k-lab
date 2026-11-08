@@ -23,7 +23,7 @@ const meta = {
     components: { BorderBeamCard },
     setup: () => ({ args }),
     template: `
-      <div style="min-height:420px; display:grid; place-items:center; padding:48px; background:#030712">
+      <div style="min-height:420px; display:grid; place-items:center; padding:48px">
         <BorderBeamCard v-bind="args">
           <div style="width:320px; padding:32px; font-family:system-ui,sans-serif; border-radius:inherit">
             <div style="font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; opacity:.5">Pro plan</div>
